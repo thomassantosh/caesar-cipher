@@ -1,5 +1,5 @@
 from encrypt import Cipher
-from quote_class import Quote
+from scrape import Quote
 
 def make_guess(shift=None, encrypted_msg=None, decrypted_msg=None):
     print(f"\tEncrypted sentence: {encrypted_msg} \n")
