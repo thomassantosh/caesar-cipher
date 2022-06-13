@@ -45,7 +45,7 @@ def run():
     author = split_quote[1].strip()
 
     # Program flow
-    print("\tWELCOME TO THE QUOTE GUESSING GAME!!")
+    print("\tWELCOME TO THE QUOTE GUESSING GAME!!\n")
     print(f"\tThis is a quote from {author}...Any guesses?\n")
     make_guess(shift=c.shift, 
             encrypted_msg= c.encrypt(sentence=q.quote_of_the_day),
