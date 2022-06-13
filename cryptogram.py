@@ -1,6 +1,5 @@
 from encrypt import Cipher
 from quote_class import Quote
-from greeting import Message
 
 def make_guess(shift=None, encrypted_msg=None, decrypted_msg=None):
     print(f"\tEncrypted sentence: {encrypted_msg} \n")
@@ -38,7 +37,6 @@ def make_guess(shift=None, encrypted_msg=None, decrypted_msg=None):
 
 def run():
     # Greetings
-    g = Message()
     q = Quote()
     c = Cipher()
 
@@ -47,8 +45,7 @@ def run():
     author = split_quote[1].strip()
 
     # Program flow
-    print(g.title + '\n')
-    print(g.welcome + '\n')
+    print("\tWELCOME TO THE QUOTE GUESSING GAME!!")
     print(f"\tThis is a quote from {author}...Any guesses?\n")
     make_guess(shift=c.shift, 
             encrypted_msg= c.encrypt(sentence=q.quote_of_the_day),
